@@ -9,6 +9,7 @@ Vue.use(VueRouter)
 const Main = () => import('../views/Main')
 const User = () => import('../views/User')
 const Home = () => import('../views/home')
+const Search = () => import('../views/layout/search.vue')
 
 
 
@@ -24,6 +25,11 @@ const routes = [
         path:'/home',
         name:'home',
         component:Home
+      },
+      {
+        path:'/search',
+        name:'search',
+        component:Search
       },
       {
         path:'/user',
